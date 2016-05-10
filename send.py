@@ -8,10 +8,10 @@ channel = connection.channel()
 # declare the rabbitMQ queue, create if neccesary. 
 channel.queue_declare(queue='test_queue')
 # publish message to an queue
+# routing_key = queue
+# body is message
 channel.basic_publish(exchange='',
-					  # routing key is queue name
                       routing_key='test_queue',
-                      # body is message
                       body='wait a minute mr postman')
 
 # notify and close connection
