@@ -1,0 +1,1 @@
+Just going through the rabbitMQ tutorial
